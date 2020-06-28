@@ -96,9 +96,11 @@ export default class Country {
     let {technologies} = this;
     let result = new Set();
     for (let tech of technologies) {
-      for (let name of (tech.enable_subunits || [])) {
-        result.add(name);
-      }
+	  if(Array.isArray(tech.enable_subunits)){
+		  tech.enable_subunits.forEach(function(name){
+			  result.add(name);
+		  });
+	  }
     }
     return result;
   }

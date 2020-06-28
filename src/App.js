@@ -8,15 +8,16 @@ import Database from "./database/Database";
 class App extends Component {
   dbs = {
     vanilla: new Database("vanilla"),
-    kaiserreich: new Database("kaiserreich"),
-    road_to_56: new Database("road_to_56"),
+    //kaiserreich: new Database("kaiserreich"),
+    //road_to_56: new Database("road_to_56"),
+	//heartsofazeroth: new Database("heartsofazeroth")
   }
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Hearts of Iron IV - Division Designer</h1>
+          <h1 className="App-title">Hearts of Azeroth - Division Designer</h1>
         </header>
         <Division dbs={this.dbs} />
         <div className="footer-space"></div>

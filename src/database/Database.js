@@ -1,11 +1,13 @@
 import Country from "./Country";
 import Equipment from "./Equipment";
-import vanilla from "./vanilla.json";
-import kaiserreich from "./kaiserreich.json";
-import road_to_56 from "./road_to_56.json";
+import vanilla from "./heartsofazeroth.json";
+//import kaiserreich from "./kaiserreich.json";
+//import road_to_56 from "./road_to_56.json";
+//import heartsofazeroth from "./heartsofazeroth.json"
 
 let mods = {
-  vanilla, kaiserreich, road_to_56
+  vanilla
+  //, kaiserreich, road_to_56, heartsofazeroth
 };
 
 export default class Database {
